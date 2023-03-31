@@ -1,0 +1,10 @@
+runtime: python37
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index\.html$
+
+- url: /(css|img|script)/(.+)
+  static_files: www/\1/\2
+  upload: www/(css|img|script)/.+$
