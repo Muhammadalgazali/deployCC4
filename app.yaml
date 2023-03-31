@@ -1,0 +1,20 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /profil.png
+  static_files: profil.png
+  upload: profil.png
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
+- url: /app.css
+  static_files: app.css
+  upload: app.css
+
+- url: /script.js
+  static_files: script.js
+  upload: script.js
